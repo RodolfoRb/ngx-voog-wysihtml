@@ -3,8 +3,6 @@ import parserRules = require("parser_rules");
 
 import { Component, AfterViewInit, ViewChild, ElementRef, Input, Output, EventEmitter, ViewEncapsulation, OnDestroy } from '@angular/core';
 
-import { DomSanitizationService, BROWSER_SANITIZATION_PROVIDERS } from '@angular/platform-browser';
-
 import { WysiHtmlToolbarComponent } from './wysihtml-toolbar.component';
 import { WysiHtmlToolbarService } from './wysihtml-toolbar.service';
 

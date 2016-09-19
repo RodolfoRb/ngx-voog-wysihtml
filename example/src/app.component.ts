@@ -1,12 +1,12 @@
 import { Component, Pipe, PipeTransform } from '@angular/core';
-import { DomSanitizationService } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 import { WysiHtmlToolbarService } from 'angular2-voog-wysihtml';
 
 @Pipe({
   name: 'safeHtml'
 })
 export class SafeHtmlPipe {
-  constructor(private sanitizer:DomSanitizationService){}
+  constructor(private sanitizer:DomSanitizer){}
 
   transform(style) {
     return this.sanitizer.bypassSecurityTrustHtml(style);
