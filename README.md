@@ -41,14 +41,12 @@ import { WysiHtmlModule } from 'angular2-voog-wysihtml';
 <wysihtml-toolbar #toolbar>
   <a data-wysihtml5-command="bold">bold</a>
   <a data-wysihtml5-command="italic">italic</a>
-  <a data-wysihtml5-command="formatBlock" 
-    data-wysihtml5-command-value="h1">H1</a>
-  <a data-wysihtml5-command="formatBlock" 
-    data-wysihtml5-command-value="p">P</a>
+  <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1">H1</a>
+  <a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="p">P</a>
 </wysihtml-toolbar>
 
-<wysihtml-editor [value]="''" [placeholder]="'This is a placeholder'" 
-  [toolbar]="toolbar"></wysihtml-editor>
+<wysihtml-editor [value]="''" [placeholder]="'This is a placeholder'" [toolbar]="toolbar">
+</wysihtml-editor>
 ```
 
 ```javascript
