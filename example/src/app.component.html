@@ -6,33 +6,33 @@
   </div>
 
   <wysihtml-toolbar id="toolbar">
-    <div class="horizontal-container">
-      <button class="action-toggle-button small" data-wysihtml-command="italic"><i class="fa fa-italic"></i></button>
-      <button class="action-toggle-button small" data-wysihtml-command="bold"><i class="fa fa-bold"></i></button>
-      <button class="action-toggle-button small" data-wysihtml-command="underline"><i class="fa fa-underline"></i></button>
-      <button class="action-toggle-button small" data-wysihtml-command="justifyLeft"><i class="fa fa-align-left"></i></button>
-      <button class="action-toggle-button small" data-wysihtml-command="justifyCenter"><i class="fa fa-align-center"></i></button>
-      <button class="action-toggle-button small" data-wysihtml-command="justifyRight"><i class="fa fa-align-right"></i></button>
+    <div class="toolbar-container">
+      <button class="toolbar-button" data-wysihtml-command="italic"><i class="fa fa-italic"></i></button>
+      <button class="toolbar-button" data-wysihtml-command="bold"><i class="fa fa-bold"></i></button>
+      <button class="toolbar-button" data-wysihtml-command="underline"><i class="fa fa-underline"></i></button>
+      <button class="toolbar-button" data-wysihtml-command="justifyLeft"><i class="fa fa-align-left"></i></button>
+      <button class="toolbar-button" data-wysihtml-command="justifyCenter"><i class="fa fa-align-center"></i></button>
+      <button class="toolbar-button" data-wysihtml-command="justifyRight"><i class="fa fa-align-right"></i></button>
 
-      <button class="action-toggle-button small" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h1">H1</button>
-      <button class="action-toggle-button small" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h2">H2</button>
-      <button class="action-toggle-button small" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h3">H3</button>
-      <button class="action-toggle-button small" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h4">H4</button>
-      <button class="action-toggle-button small" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h5">H5</button>
-      <button class="action-toggle-button small" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h6">H6</button>
+      <button class="toolbar-button" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h1">H1</button>
+      <button class="toolbar-button" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h2">H2</button>
+      <button class="toolbar-button" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h3">H3</button>
+      <button class="toolbar-button" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h4">H4</button>
+      <button class="toolbar-button" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h5">H5</button>
+      <button class="toolbar-button" data-wysihtml-command="formatBlock" data-wysihtml-command-value="h6">H6</button>
 
-      <button class="action-toggle-button small" data-wysihtml-command="insertUnorderedList"><i class="fa fa-list-ul" aria-hidden="true"></i></button>
-      <button class="action-toggle-button small" data-wysihtml-command="insertOrderedList"><i class="fa fa-list-ol" aria-hidden="true"></i></button>
+      <button class="toolbar-button" data-wysihtml-command="insertUnorderedList"><i class="fa fa-list-ul" aria-hidden="true"></i></button>
+      <button class="toolbar-button" data-wysihtml-command="insertOrderedList"><i class="fa fa-list-ol" aria-hidden="true"></i></button>
 
-      <button class="action-toggle-button small" data-wysihtml-action="change_view"><i class="fa fa-code"></i></button>
+      <button class="toolbar-button" data-wysihtml-action="change_view"><i class="fa fa-code"></i></button>
     </div>
   </wysihtml-toolbar>
 
-  <div class="row">
-    <div class="item">
-      <wysihtml-editor #wysiValue [value]='"<h1>Hello world</h1>"' [toolbar]="'toolbar'"></wysihtml-editor>
+  <div class="horizontal-container">
+    <div class="content-container">
+      <wysihtml-editor #wysiValue [value]='"<h1>Hello world</h1>"' [width]="'320'" [height]="'320'" [toolbar]="'toolbar'"></wysihtml-editor>
     </div>
 
-    <div class="item preview" [innerHTML]="wysiValue.value | safeHtml"></div>
+    <div class="content-container" [innerHTML]="wysiValue.value | safeHtml"></div>
   </div>
 </div>
