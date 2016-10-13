@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <base href="/">
+
+    <meta charset="UTF-8">
+
+    <title>Example app</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+    <style>
+      .loading,
+      .loading:after,
+      .loading:before {
+        content: ' ';
+        top: 0;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        animation: spinner 1600ms infinite ease-in-out;
+      }
+
+      .loading {
+        color: #555;
+        margin: 64px auto;
+        position: relative;
+        animation-delay: -160ms;
+      }
+
+      .loading:after {
+        left: 64px;
+      }
+
+      .loading:before {
+        left: -64px;
+        animation-delay: -320ms;
+      }
+
+      .loading:after,
+      .loading:before {
+        position: absolute;
+      }
+
+      @keyframes spinner {
+        40% {
+          box-shadow: 0 40px 0 0;
+        }
+
+        0%,
+        80%,
+        100% {
+          box-shadow: 0 40px 0 -20px;
+        }
+      }
+
+      * {
+        border-size: border-box;
+      }
+
+      .row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2em;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+
+      .item {
+        flex-grow: 1;
+      }
+
+      .item.preview {
+        border: 1px solid #555;
+        border-radius: 2px;
+        padding: 4px;
+        width: 400px;
+        max-height: 150px;
+        overflow-y: auto;
+        font-family: monospace;
+      }
+
+      .wysihtml5-container {
+        border: 1px solid grey;
+        margin: 0 1em;
+        padding: 0.25em;
+      }
+
+      .wysihtml-command-active {
+        font-weight: bold;
+      }
+
+      button.wysihtml-command-active {
+        color: #3498db;
+      }
+
+      .toolbar.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+        user-select : none;
+        -webkit-user-select: none;
+      }
+
+      .event-container {
+        max-height: 175px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <my-app><div class="loading"></div></my-app>
+  <script type="text/javascript" src="https://zefoy.github.io/angular2-voog-wysihtml/app.js"></script></body>
+</html>
