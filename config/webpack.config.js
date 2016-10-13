@@ -14,12 +14,12 @@ module.exports = {
   module: {
     loaders: [
       {
-    	  test: /\.ts$/,
-    	  loaders: [
-					'awesome-typescript-loader',
-					'angular2-template-loader'
+        test: /\.ts$/,
+        loaders: [
+          'awesome-typescript-loader',
+          'angular2-template-loader'
         ]
-    	},
+      },
       {
         test: /\.scss$/,
         loaders: ["raw-loader", "sass"]
@@ -44,11 +44,11 @@ module.exports = {
       "wysihtml": "wysihtml.js",
       "parser_rules": "advanced_and_extended.js"
     },
-    root: [path.resolve('./src'), path.resolve('./src/vendor'), path.resolve('node_modules')],
-    extensions: ['', '.js', '.ts', 'd.ts']
+    modules: [ '../src', '../src/vendor', path.join(__dirname, "node_modules") ],
+    extensions: ['.js', '.ts', 'd.ts']
   },
-	externals: [
-		"@angular/common",
+  externals: [
+    "@angular/common",
     "@angular/compiler",
     "@angular/core",
     "@angular/forms",

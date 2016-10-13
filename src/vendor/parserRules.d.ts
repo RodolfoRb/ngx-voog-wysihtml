@@ -10,5 +10,5 @@ declare namespace ParserRules {
 }
 
 declare module "parser_rules" {
-	export = ParserRules;
+  export = ParserRules;
 }

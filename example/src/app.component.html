@@ -30,7 +30,7 @@
 
   <div class="row">
     <div class="item">
-      <wysihtml-editor #wysiValue [value]='"<h1>Hello world</h1>"'[toolbar]="'toolbar'"></wysihtml-editor>
+      <wysihtml-editor #wysiValue [value]='"<h1>Hello world</h1>"' [toolbar]="'toolbar'"></wysihtml-editor>
     </div>
     <div class="item preview" [innerHTML]="wysiValue.value | safeHtml"></div>
   </div>
