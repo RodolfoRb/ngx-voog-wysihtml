@@ -38,23 +38,23 @@ import { WysiHtmlModule } from 'angular2-voog-wysihtml';
 ##### Use it in your html template:
 
 ```html
-    <wysihtml-toolbar #toolbar>
-      <a data-wysihtml5-command="bold">bold</a>
-      <a data-wysihtml5-command="italic">italic</a>
-      <a data-wysihtml5-command="formatBlock" 
-        data-wysihtml5-command-value="h1">H1</a>
-      <a data-wysihtml5-command="formatBlock" 
-        data-wysihtml5-command-value="p">P</a>
-    </wysihtml-toolbar>
+<wysihtml-toolbar #toolbar>
+  <a data-wysihtml5-command="bold">bold</a>
+  <a data-wysihtml5-command="italic">italic</a>
+  <a data-wysihtml5-command="formatBlock" 
+    data-wysihtml5-command-value="h1">H1</a>
+  <a data-wysihtml5-command="formatBlock" 
+    data-wysihtml5-command-value="p">P</a>
+</wysihtml-toolbar>
 
-    <wysihtml-editor [value]="''" [placeholder]="'This is a placeholder'" 
-      [toolbar]="toolbar"></wysihtml-editor>
+<wysihtml-editor [value]="''" [placeholder]="'This is a placeholder'" 
+  [toolbar]="toolbar"></wysihtml-editor>
 ```
 
 ```javascript
-[value]         // The textual value (html content) for the editor. 
-[toolbar]       // Toolbar reference, either *Template reference* or a *DOM id*.
-[placeholder]   // Placeholder text for the editor, shown when the content is empty.
+[value]        // The textual value (html content) for the editor. 
+[toolbar]      // Toolbar reference, either *Template reference* or a *DOM id*.
+[placeholder]  // Placeholder text for the editor, shown when the content is empty.
 ```
 
-For more detailed documentation with all the supported options see [voog wysihtml documentation](https://github.com/Voog/wysihtml/).
+For more detailed documentation with all the supported options see [Wysihtml by Voog documentation](https://github.com/Voog/wysihtml/).
