@@ -51,7 +51,7 @@ import { WysiHtmlModule } from 'angular2-voog-wysihtml';
 
 ```javascript
 [value]        // The textual value (html content) for the editor. 
-[toolbar]      // Toolbar reference, either *Template reference* or a *DOM id*.
+[toolbar]      // Toolbar reference, either template reference or a DOM id.
 [placeholder]  // Placeholder text for the editor, shown when the content is empty.
 ```
 
