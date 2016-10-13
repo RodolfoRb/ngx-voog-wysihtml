@@ -2,7 +2,7 @@
   <div class="app-title">Simple example app for the angular2-voog-wysihtml</div>
 
   <div class="info-container">
-    Use the editor on left and see the contents previewd on the right.<br>
+    Use the editor on the left and see the contents previewed on the right.<br>
   </div>
 
   <wysihtml-toolbar id="toolbar">
@@ -32,6 +32,7 @@
     <div class="item">
       <wysihtml-editor #wysiValue [value]='"<h1>Hello world</h1>"' [toolbar]="'toolbar'"></wysihtml-editor>
     </div>
+
     <div class="item preview" [innerHTML]="wysiValue.value | safeHtml"></div>
   </div>
 </div>

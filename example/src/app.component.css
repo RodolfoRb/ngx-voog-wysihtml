@@ -1,26 +1,31 @@
 .app-title {
-  font-size: 1.8em;
+  font-size: 24px;
 }
 
 .box-container {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  padding: 32px;
-  max-width: 800px;
-  max-height: 600px;
+  width: 800px;
+  height: 500px;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 24px;
+  margin: 24px auto;
   border-radius: 4px;
-  margin: 32px auto;
 
   color: #555;
-  background-color: #eee;
   font-family: sans-serif;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18), 0 6px 6px rgba(0, 0, 0, 0.25);
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.18),
+    0 6px 6px rgba(0, 0, 0, 0.25);
+  background-color: #eee;
 }
 
 .info-container {
-  padding: 16px;
-  line-height: 1.5em;
+  padding: 12px 16px;
+
+  line-height: 24px;
 }
 
 .vertical-container {
@@ -32,29 +37,29 @@
 
 .horizontal-container {
   display: flex;
-  padding: 0 16px;
-  align-items: stretch;
   flex: auto 1 1;
   flex-direction: row;
+  align-items: stretch;
+  padding: 0 16px;
 }
 
 .action-toggle-button {
-  text-decoration: none !important;
-  color: #555;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 20px;
-  align-items: center;
-  justify-content: center;
   padding: 16px;
+  margin: 8px;
   border-radius: 4px;
   border: 1px solid #555;
-  margin: 8px;
 
+  color: #555;
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
+  text-decoration: none !important;
 }
 
 .action-toggle-button:hover {
@@ -68,6 +73,6 @@
 }
 
 .action-toggle-button.wysihtml-command-active {
-  background-color: #777777 !important;
   color: #fff;
+  background-color: #777 !important;
 }

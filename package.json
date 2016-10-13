@@ -53,6 +53,6 @@
     "typescript": "^2.0.0",
     "webpack": "^2.1.0-beta.25",
     "wysihtml": "git://github.com/Voog/wysihtml.git",
-    "zone.js": "^0.6.23"
+    "zone.js": "^0.6.25"
   }
 }

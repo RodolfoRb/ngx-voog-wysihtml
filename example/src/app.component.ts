@@ -14,7 +14,7 @@ export class SafeHtmlPipe {
 }
 
 @Component({
-  selector: 'example-app',
+  selector: 'my-app',
   template: require('./app.component.html'),
   styles: [require('./app.component.css')]
 })
