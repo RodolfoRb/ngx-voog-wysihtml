@@ -1,2 +1,5 @@
-<textarea [style.width.px]="width" [style.height.px]="height" placeholder="{{placeholder}}" class="wysihtml5-container" contenteditable="true" #wysihtml>
+<textarea *ngIf="type == 'textarea'" [style.width.px]="width" [style.height.px]="height" [style.maxWidth.px]="maxWidth" [style.maxHeight.px]="maxHeight" placeholder="{{placeholder}}" class="wysihtml5-container" contenteditable="true" #wysihtml>
 </textarea>
+
+<div *ngIf="type != 'textarea'" [style.minWidth.px]="width" [style.minHeight.px]="height" [style.maxWidth.px]="maxWidth" [style.maxHeight.px]="maxHeight" [attr.data-placeholder]="placeholder" class="wysihtml5-container" contenteditable="true" #wysihtml>
+</div>
