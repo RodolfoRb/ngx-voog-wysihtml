@@ -23,6 +23,11 @@ export class WysiHtmlEditorComponent implements OnDestroy {
   @Input('width') width = 300;
   @Input('height') height = 150;
 
+  @Input('maxWidth') maxWidth;
+  @Input('maxHeight') maxHeight;
+
+  @Input('type') type: string = 'div';
+
   private _initialValue : string;
 
   /**
