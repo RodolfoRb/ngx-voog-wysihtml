@@ -15,7 +15,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.join(__dirname, '../dist'),
-    publicPath: 'https://zefoy.github.io/angular2-voog-wysihtml/'
+    publicPath: 'https://zefoy.github.io/ngx-voog-wysihtml/'
   },
   module: {
     loaders: [

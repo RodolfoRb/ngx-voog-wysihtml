@@ -4,7 +4,7 @@
 
 This library is wrapper for the popular [Wysihtml library](http://wysihtml.com/) by Voog. 
 
-See a live example application <a href="https://zefoy.github.io/angular2-voog-wysihtml/">here</a>.
+See a live example application <a href="https://zefoy.github.io/ngx-voog-wysihtml/">here</a>.
 
 ### Building the library
 
